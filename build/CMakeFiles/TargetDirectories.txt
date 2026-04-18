@@ -1,6 +1,0 @@
-D:/stm32/project/text/build/CMakeFiles/text.dir
-D:/stm32/project/text/build/CMakeFiles/edit_cache.dir
-D:/stm32/project/text/build/CMakeFiles/rebuild_cache.dir
-D:/stm32/project/text/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-D:/stm32/project/text/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-D:/stm32/project/text/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
