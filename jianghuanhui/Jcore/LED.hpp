@@ -22,7 +22,7 @@ namespace LightControl
     }
 
   public:
-    void contrl_light(uint8_t state,GPIO*GPIO)
+    void contrl_light(GPIO*GPIO,uint8_t state)
     {
       if (state==1) open_light(GPIO);
       else close_light(GPIO);
