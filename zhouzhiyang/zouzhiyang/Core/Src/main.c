@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "LED.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,7 +44,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+led_t led1;
+led_t led2;
+led_t led3;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -67,7 +69,9 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+  Led_Control(&led1,GPIOA,GPIO_PIN_3,0);
+  Led_Control(&led2,GPIOA,GPIO_PIN_4,0);
+  Led_Control(&led3,GPIOA,GPIO_PIN_5,0);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
