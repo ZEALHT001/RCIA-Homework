@@ -3,9 +3,9 @@
 #include "cmsis_os.h"
 
 LED_t leds[3] = {
-  {LED_0_GPIO_Port, GPIO_PIN_0, NULL, 500},
-  {LED_1_GPIO_Port, GPIO_PIN_1, NULL, 1000},
-  {LED_2_GPIO_Port, GPIO_PIN_2, NULL, 800}
+  {LED_0_GPIO_Port, GPIO_PIN_0, NULL},
+  {LED_1_GPIO_Port, GPIO_PIN_1, NULL},
+  {LED_2_GPIO_Port, GPIO_PIN_2, NULL}
 };
 
 void LED_On(LED_t* led) {
@@ -19,20 +19,18 @@ void LED_Toggle(LED_t* led) {
 }
 
 void LED_Task(void* argument) {
-  LED_t* led = (LED_t*)argument;
   for(;;) {
-    LED_Toggle(led);
-    osDelay(led->delay);
+    for(int i = 0; i < 3; i++) {
+        LED_Toggle(&leds[i]);  
+      }
+    osDelay(1000);
   }
 }
-static const char* ledTaskNames[] = {"led0Task", "led1Task", "led2Task"};
 void LED_Task_Init(void) {
-for(int i = 0; i < 3; i++) {
   const osThreadAttr_t ledTask_attributes = {
-    .name = ledTaskNames[i],
+    .name = "ledTask",
     .stack_size = 128 * 4,
     .priority = (osPriority_t) osPriorityNormal,
   };
-  leds[i].handle = osThreadNew(LED_Task, &leds[i], &ledTask_attributes);
-}
+  osThreadNew(LED_Task, NULL, &ledTask_attributes);
 }

@@ -12,7 +12,6 @@ typedef struct {
   GPIO_TypeDef* port;
   uint16_t pin;
   osThreadId_t handle;
-  uint32_t delay;
 } LED_t;
  
 void LED_Task_Init(void);
