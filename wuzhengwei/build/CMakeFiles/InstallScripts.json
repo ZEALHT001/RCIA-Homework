@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/STM32MAXzhuoye/wuzhengwei/RCIA-Homework/wuzhengwei/build/cmake_install.cmake",
+		"D:/STM32MAXzhuoye/wuzhengwei/RCIA-Homework/wuzhengwei/build/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -17,13 +17,12 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
-
+// #include "main.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "D:\STM32MAXzhuoye\test\.vscode\led_wzw\led.h"
+#include "led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,10 +43,9 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-int add;
 int P;
-char *GPIO_code;
-char *GPIO_PIN_Number;
+GPIO_TypeDef* GPIOx;
+uint16_t GPIO_Pin;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -99,7 +97,7 @@ int main(void)
   while (1)
   {
 
-    void Judge(P,GPIO_code,GPIO_PIN_Number);
+    Judge(P,GPIOx,GPIO_Pin);
 
 
     /* USER CODE END WHILE */

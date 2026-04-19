@@ -1,0 +1,6 @@
+D:/STM32MAXzhuoye/wuzhengwei/RCIA-Homework/wuzhengwei/build/CMakeFiles/test.dir
+D:/STM32MAXzhuoye/wuzhengwei/RCIA-Homework/wuzhengwei/build/CMakeFiles/edit_cache.dir
+D:/STM32MAXzhuoye/wuzhengwei/RCIA-Homework/wuzhengwei/build/CMakeFiles/rebuild_cache.dir
+D:/STM32MAXzhuoye/wuzhengwei/RCIA-Homework/wuzhengwei/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+D:/STM32MAXzhuoye/wuzhengwei/RCIA-Homework/wuzhengwei/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+D:/STM32MAXzhuoye/wuzhengwei/RCIA-Homework/wuzhengwei/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
