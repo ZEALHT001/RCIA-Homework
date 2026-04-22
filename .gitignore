@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # --- 编译产物 (Build Outputs) ---
 build/
 .cache/
@@ -39,3 +40,10 @@ Thumbs.db
 # --- 外部库或依赖 ---
 # 如果你的固件依赖了外部 submodule 或第三方库且不想提交
 # lib/
+=======
+chenyilin/build/
+chenyilin/*.ps1
+jianghuanhui/build/
+jianghuanhui/*.ps1
+
+>>>>>>> df2b39751ab7912ca0df02bd91b496cc8b43185a
