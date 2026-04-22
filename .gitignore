@@ -1,5 +1,49 @@
+<<<<<<< HEAD
+# --- 编译产物 (Build Outputs) ---
+build/
+.cache/
+bin/
+obj/
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+
+# --- 编译数据库 (Clangd 索引必需，通常由 CMake 生成) ---
+# 如果你希望每个协作者都自己生成，就忽略它；
+# 在嵌入式开发中，通常建议忽略，因为它包含绝对路径。
+compile_commands.json
+
+# --- 编辑器及 IDE 相关 (Editor Specific) ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+*.code-workspace
+.clangd/
+
+# --- 传统的 Keil/IAR 遗留文件 (如果你是从 Keil 迁移过来的) ---
+*.uvoptx
+*.uvprojx
+*.uvguix.*
+Listings/
+Objects/
+DebugConfig/
+
+# --- 操作系统临时文件 ---
+.DS_Store
+Thumbs.db
+
+# --- 外部库或依赖 ---
+# 如果你的固件依赖了外部 submodule 或第三方库且不想提交
+# lib/
+=======
 chenyilin/build/
 chenyilin/*.ps1
 jianghuanhui/build/
 jianghuanhui/*.ps1
 
+>>>>>>> df2b39751ab7912ca0df02bd91b496cc8b43185a
