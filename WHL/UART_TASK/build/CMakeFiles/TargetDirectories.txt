@@ -1,6 +1,0 @@
-D:/STM32/UART_TASK/build/CMakeFiles/UART_TASK.dir
-D:/STM32/UART_TASK/build/CMakeFiles/edit_cache.dir
-D:/STM32/UART_TASK/build/CMakeFiles/rebuild_cache.dir
-D:/STM32/UART_TASK/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-D:/STM32/UART_TASK/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-D:/STM32/UART_TASK/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
