@@ -206,12 +206,16 @@ void SysTick_Handler(void)
 void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
-  extern uart_Task_t uart_task; // 声明外部uart_task变量
-  uart_dma_idle_handler(&uart_task.huart1); // 调用DMA空闲中断处理函数
+  
   /* USER CODE END USART1_IRQn 0 */
-  HAL_UART_IRQHandler(&huart1);
+  
   /* USER CODE BEGIN USART1_IRQn 1 */
+  extern uart_Task_t uart_task; // 声明外部uart_task变量
+  if(__HAL_UART_GET_FLAG(&huart1, UART_FLAG_IDLE) ) { 
+  uart_Task_IdleCallback(&uart_task); // 调用空闲中断处理函数
+  }
 
+  HAL_UART_IRQHandler(&huart1);// 调用HAL库的UART中断处理函数
   /* USER CODE END USART1_IRQn 1 */
 }
 
