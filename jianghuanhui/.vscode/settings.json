@@ -8,7 +8,7 @@
                                     "CMAKE_C_COMPILER":  "E:/STM32_Tools/gcc/bin/arm-none-eabi-gcc.exe",
                                     "CMAKE_CXX_COMPILER":  "E:/STM32_Tools/gcc/bin/arm-none-eabi-g++.exe",
                                     "CMAKE_MAKE_PROGRAM":  "E:/STM32_Tools/ninja/ninja.exe",
-                                    "CMAKE_TOOLCHAIN_FILE":  "D:/stm32/project/text/cmake/gcc-arm-none-eabi.cmake"
+                                    "CMAKE_TOOLCHAIN_FILE":  "D:/stm32/project/text/jianghuanhui/cmake/gcc-arm-none-eabi.cmake"
                                 },
     "cmake.useCMakePresets":  "never",
     "cortex-debug.gdbPath":  "E:/STM32_Tools/gcc/bin/arm-none-eabi-gdb.exe",

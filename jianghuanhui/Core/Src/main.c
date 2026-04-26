@@ -19,27 +19,17 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "can.h"
+#include "dma.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-int a =0;
-#include "LED.hpp"
-#include "../../Jcore/J_Usart.hpp"  
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-LightControl::Light light{GPIOA, GPIO_PIN_9};
-Usart::Usart_data usartdata{{&huart1}, {18}};
-
-// LightControl::Light::GPIO light_gpio{GPIOA, GPIO_PIN_9};
-// LightControl::Light::GPIO light_gpioA7{GPIOA, GPIO_PIN_7};
-// LightControl::Light::GPIO light_gpioA6{GPIOA, GPIO_PIN_6};
-
-// Usart::Usart_data usartdata;
-// Usart::Usart_data::USART USART{{&huart1}, {18},{1}};
-// uint8_t pdata[18];
 
 /* USER CODE END PTD */
 
@@ -99,19 +89,17 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_CAN1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-// usartdata.send_data_DMA(&USART, pdata,USART.size[0]); 
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-  //  light.contrl_light(&light_gpio, 1);
-  //  light.contrl_light(&light_gpioA7, 1);
-  //  light.contrl_light(&light_gpioA6, 1);
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -173,14 +161,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-  // void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size) {
-  //   for(int i=1;i<=8;i++)
-  //   {
-  //     if (huart == USART.huartx[i]) {
-  //       usartdata.receive_data_DMA(&USART, pdata, i);
-  //     }
-  //   }
-  // }
+  
 /* USER CODE END 4 */
 
 /**
