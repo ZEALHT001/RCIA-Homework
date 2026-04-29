@@ -1,3 +1,4 @@
 {
     "cmake.sourceDirectory": "D:/stm32/project/text/jianghuanhui"
+    "cmake.ignoreCMakeListsMissing": true
 }
