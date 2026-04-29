@@ -31,7 +31,7 @@ int a =0;
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 LightControl::Light light{GPIOA, GPIO_PIN_9};
-Usart::Usart_data usartdata{{&huart1}, {18}};
+Usart::Usart_data usartdata{&huart1, 18,nullptr};
 
 // LightControl::Light::GPIO light_gpio{GPIOA, GPIO_PIN_9};
 // LightControl::Light::GPIO light_gpioA7{GPIOA, GPIO_PIN_7};
@@ -173,14 +173,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-  // void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t Size) {
-  //   for(int i=1;i<=8;i++)
-  //   {
-  //     if (huart == USART.huartx[i]) {
-  //       usartdata.receive_data_DMA(&USART, pdata, i);
-  //     }
-  //   }
-  // }
+
 /* USER CODE END 4 */
 
 /**
